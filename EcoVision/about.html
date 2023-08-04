@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoVision Project</title>
+    <link rel="stylesheet" href="2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logoo.png" alt=""></a>
+            <div class = "nav-links" id = "navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">ГЛАВНАЯ</a></li>
+                    <li><a href="about.html">О НАС</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+
+<section class = "course">
+    <h1>Создатели проекта</h1>
+    
+    <div class = "row">
+        <div class="course-col">
+            <h2>Негмат Аружан</h2>
+            <h3>
+             Создатель сайта, ответственная за его дизайн и саму работу, сборщик всех изображений 
+             <br><br>
+                Personality: супер шахматистка или шалфей, не важно, нац орбитр фиде, физик-ядерщик не знающий базу 7 класса, профессор любой науки, любитель яблок, secret mermaid butterfly swimming, 
+                или просто rivelmax, swiftie
+            </h3>
+        </div>
+    
+        <div class="course-col">
+            <h2>Канат Абылкасым </h2>
+            <h3>
+                Создатель логотипа, карты ближнего округа, разметки ближайших отходо-сборочных пунктов, 
+                 ответсвенный за подключение GPS
+                <br><br>
+                Personality: гений, плейбой, миллиардер, филантроп, капитан, CEO, член парламента, профильный специалист, наследник Чингисхана
+            </h3>
+        </div>
+    </div>
+
+
+
+    <div class = "row">
+        <div class="course-col">
+            <h2>Жумажанов Мансур</h2>
+            <h3>
+                 Конвертировал логотип в png, предоставил цели проекта
+                 <br><br>
+                 Personality: очень умный чувак, который еще и качается
+            </h3>
+        </div>
+    
+        <div class="course-col">
+            <h2>Дария</h2>
+            <h3>
+                Ответственная за сбор информации об обитателях каждой местности.
+                <br><br>
+                Personality: -
+            </h3>
+        </div>
+    </div>
+</section>
+
+
+<section class = "course">
+    <h1>Примечание</h1>
+    <h3>
+     Так как это лишь демо-версия, сайт еще не полностью реализован. 
+    </h3>
+    <br>
+    <h1>Цели на сайт</h1>
+    <div class = "row">
+        <div class="course-col">
+            <h2>1</h2>
+            <h3>
+                Дополнить информацией о животных и растениях остальные регионы Казахстана.
+            </h3>
+        </div>
+        <div class="course-col">
+            <h2>2</h2>
+            <h3>
+                Перейти на описание живности других стран.
+            </h3>
+        </div>
+        <div class="course-col">
+            <h2>3</h2>
+            <h3>
+                Подключение базы данных MySQL для хранения данных, предоставляемых сайтом.
+            </h3>
+        </div>
+
+    </div>
+    <div class = "row">
+        <div class="course-col">
+            <h2>4</h2>
+            <h3>
+                Закончить адаптацию под МЕНЮ 
+            </h3>
+        </div>
+        <div class="course-col">
+            <h2>5</h2>
+            <h3>
+            Убрать на карте дублирование навигационного значка.
+            </h3>
+        </div>
+        <div class="course-col">
+            <h2>6</h2>
+            <h3>
+            Поменять устаревшие метки, улучшить точность GPS
+            </h3>
+        </div>
+    </div>
+
+</section>
+
+
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+
+
+</body>
+</html>

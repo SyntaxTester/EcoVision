@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoVision Project</title>
+    <link rel="stylesheet" href="2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class = "nav-links" id = "navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Astana's Flora And Fauna</h1>
+    </section>
+
+
+
+<section class = "types">
+    <h1>Kazakhstan cities</h1>
+    <p>Choose the city which flora and fauna you want to discover</p>
+
+    <div class = "row">
+        <div class="types1-col">
+            <img src="images/baikonur area.png" alt="">
+            <div class="layer">
+                <ul>
+                    <h3><li><a href="astana.html">BAIKONUR</a></li></h3>
+                </ul>
+               
+            </div>
+        </div>
+        <div class="types1-col">
+            <img src="images/yesil area.png" alt="">
+            <div class="layer">
+                <ul>
+                    <h3><li><a href="">YESIL</a></li></h3>
+                </ul>
+            </div>
+        </div>
+        <div class="types1-col">
+            <img src="images/almaty area.png" alt="">
+            <div class="layer">
+                <ul>
+                    <h3><li><a href="">ALMATY</a></li></h3>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class = "row">
+        <div class="types1-col">
+            <img src="images/saryarka area.png" alt="">
+            <div class="layer">
+                <ul>
+                    <h3><li><a href="astana.html">SARYARKA</a></li></h3>
+                </ul>
+               
+            </div>
+        </div>
+        <div class="town1-col">
+            <img src="images/nurinsky area.png" alt="">
+            <div class="layer">
+                <ul>
+                    <h3><li><a href="">NURINSKY</a></li></h3>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+    
+<!-- ------About us content --------- -->
+
+    <section class = "about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the world's largest university</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sed fugiat mollitia voluptates iste harum quas incidunt eius modi blanditiis, saepe sit quaerat soluta exercitationem placeat beatae. Laboriosam laborum doloribus aliquam nam eos incidunt ullam.</p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpg">
+            </div>
+        </div>
+    
+    </section>
+    
+
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo optio sit ducimus quasi corporis voluptas aliquam nulla voluptatibus quam, <br> non commodi in placeat nemo voluptates fugiat, molestiae aperiam praesentium omnis!</p>
+    <div class = "icons">
+        <i class = "fa fa-facebook"></i>
+        <i class = "fa fa-twitter"></i>
+        <i class = "fa fa-instagram"></i>
+        <i class = "fa fa-telegram"></i>
+    </div>
+    <p>Made by Easy Tutorials</p>
+</section>
+
+
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+
+
+</body>
+</html>
