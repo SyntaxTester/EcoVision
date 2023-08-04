@@ -3,32 +3,290 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoVision</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-    crossorigin=""/>
-     <!-- Make sure you put this AFTER Leaflet's CSS -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-    crossorigin=""></script>
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    <title>EcoVision Project</title>
+    <link rel="stylesheet" href="2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
 </head>
 <body>
-    <!-- <h1>Map</h1> -->
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logoo.png" alt=""></a>
+            <div class = "nav-links" id = "navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">ГЛАВНАЯ</a></li>
+                    <li><a href="about.html">О НАС</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+<div class = "text-box">
+    <h1>Сохранение Биоразнообразия</h1>
+    <p>
+        13 октября 2022 г. — Средняя численность популяций диких животных в мире за 48 лет сократилась на 69%.
+        <br> За последние годы 33,5 тысячи видов растений (14% известных видов) оказались под угрозой исчезновения.
+        <br> <br> Ниже карта, которая поможет найти ближайшие пункты по сбору отходов на переработку:
+    </p>
+    <a href="map.html" class="hero-btn">КАРТА</a>
+</div>
+    </section>
 
-    <!-- <div class="sideBar">
 
-    </div> -->
-    <div class="map" id="map">
+  
+    <section class = "facilities">
+        <h1>
+           ЗАДАЧИ ПРОЕКТА
+        </h1>
+        
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/goal1.png">
+            <h3>Обеспечение удобства отслеживания экологической ситуации, доступность изучения флоры и фауны родного края</h3>
+            </div>
+            
+            <div class="facilities-col">
+                <img src="images/goal2.png">
+            <h3>Распространение информации о районах, стоящих под угрозой для их экосистем, с целью предотвращения сокращения биоразнообразия</h3>
+            </div>
+        
+            <div class="facilities-col">
+                <img src="images/goal3.png">
+            <h3>Привлечь людей к проведению местных мероприятий по охране окружающей среды</h3>
+            </div>
+        </div>
+        </section>
 
+
+
+        <section class = "course">
+            <h1>Способы решения проблемы биологического разнообразия</h1>
+            
+            <div class = "row">
+                <div class="course-col">
+                    <h2>1</h2>
+                    <h3>
+                        Ограничение разрушительной деятельности, такой как вырубка лесов,
+                         незаконная охота, загрязнение и изменение природных сред, поможет сохранить экосистемы и их видообразие. 
+                         Увеличение территорий и создание новых особо охраняемых зон.
+                    </h3>
+                </div>
+            
+                <div class="course-col">
+                    <h2>2</h2>
+                    <h3>
+                        Биоразнообразие - мировой ресурс, и для его сохранения требуется сотрудничество стран и международных организаций. 
+                        Совсем скоро проект EcoVision сможет предоставлять информацию не только о Казахстане, но и о живности и проблемах других стран. 
+                        Обмен знаний, опыта и ресурсов поможет эффективно решать проблемы биоразнообразия. 
+                    </h3>
+                </div>
+                
+                <div class="course-col">
+                    <h2>3</h2>
+                    <h3>
+                        Благодаря особой функции нашего сайта, его пользователи смогут легко находить пункты сбора пластика,
+                        отходов, металла, макулатуры и т.д. Узнав больше об отдельных местностях, люди будут мотивированы сохранить богатсво определенного края. 
+                    </h3>
+                </div>
+            </div>
+            </section>
+            
+          
+
+
+<section class = "town1">
+    <h1>ГОРОДА КАЗАХСТАНА</h1>
+    <p>ВЫБЕРИТЕ ОБЛАСТЬ/ГОРОД ЧЬЮ ФЛОРУ И ФАУНУ ВЫ ХОТИТЕ ИЗУЧИТЬ</p>
+
+    <div class = "row">
+        <div class="town1-col">
+            <img src="images/astana.png" alt="">
+            <div class="layer">
+                <ul>
+                    <h3><li><a href="astana_chapter.html">АСТАНА</a></li></h3>
+                </ul>
+               
+            </div>
+        </div>
+        <div class="town1-col">
+            <img src="images/almaty.png" alt="">
+            <div class="layer">
+                <ul>
+                    <h3><li><a href="">АЛМАТЫ</a></li></h3>
+                </ul>
+            </div>
+        </div>
+        <div class="town1-col">
+            <img src="images/kyzylorda.png" alt="">
+            <div class="layer">
+                <ul>
+                    <h3><li><a href="">КЫЗЫЛОРДИИНСКАЯ ОБЛАСТЬ</a></li></h3>
+                </ul>
+            </div>
+        </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.js" charset="utf-8"></script>
-    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
-    <script src="app.js"></script>
+
+    <div class = "row">
+        <div class="town1-col">
+            <img src="images/pavlodar.png" alt="">
+            <div class="layer">
+                <ul>
+                    <h3><li><a href="">ПАВЛОДАРСКАЯ ОБЛАСТЬ</a></li></h3>
+                </ul>
+            </div>
+        </div>
+        <div class="town1-col">
+            <img src="images/shymkent.png" alt="">
+            <div class="layer">
+                <ul>
+                    <h3><li><a href="">ШЫМКЕНТ</a></li></h3>
+                </ul>
+            </div>
+        </div>
+        <div class="town1-col">
+            <img src="images/aktau.png" alt="">
+            <div class="layer">
+                <ul>
+                    <h3><li><a href="">AKTAU</a></li></h3>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class = "row">
+        <div class="town1-col">
+            <img src="images/karagandy.png" alt="">
+            <div class="layer">
+                <ul>
+                    <h3><li><a href="">КАРАГАНДИНСКАЯ ОБЛАСТЬ</a></li></h3>
+                </ul>
+            </div>
+        </div>
+        <div class="town1-col">
+            <img src="images/taraz.png" alt="">
+            <div class="layer">
+                <ul>
+                    <h3><li><a href="">ЖАМБЫЛСКАЯ ОБЛАСТЬ</a></li></h3>
+                </ul>
+            </div>
+        </div>
+        <div class="town1-col">
+            <img src="images/uralsk.png" alt="">
+            <div class="layer">
+                <ul>
+                    <h3><li><a href="">ЗАПАДНЫЙ КАЗАХСТАН</a></li></h3>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class = "row">
+        <div class="town1-col">
+            <img src="images/aktobe.png" alt="">
+            <div class="layer">
+                <ul>
+                    <h3><li><a href="">AKTOBE</a></li></h3>
+                </ul>
+            </div>
+        </div>
+        <div class="town1-col">
+            <img src="images/kokshetau.png" alt="">
+            <div class="layer">
+                <ul>
+                    <h3><li><a href="">АКМОЛИНСКАЯ ОБЛАСТЬ</a></li></h3>
+                </ul>
+            </div>
+        </div>
+        <div class="town1-col">
+            <img src="images/semei.png" alt="">
+            <div class="layer">
+                <ul>
+                    <h3><li><a href="">АБАЙСКАЯ ОБЛАСТЬ</a></li></h3>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class = "row">
+        <div class="town1-col">
+            <img src="images/kostanai.png" alt="">
+            <div class="layer">
+                <ul>
+                    <h3><li><a href="">КОСТАНАЙСКАЯ ОБЛАСТЬ</a></li></h3>
+                </ul>
+            </div>
+        </div>
+        <div class="town1-col">
+            <img src="images/atyrau.png" alt="">
+            <div class="layer">
+                <ul>
+                    <h3><li><a href="">АТЫРАУСКАЯ ОБЛАСТЬ</a></li></h3>
+                </ul>
+            </div>
+        </div>
+        <div class="town1-col">
+            <img src="images/turkestan.png" alt="">
+            <div class="layer">
+                <ul>
+                    <h3><li><a href="">ТУРКЕСТАН</a></li></h3>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class = "row">
+        <div class="town1-col">
+            <img src="images/petropavlovsk.png" alt="">
+            <div class="layer">
+                <ul>
+                    <h3><li><a href="">СЕВЕРНЫЙ КАЗАХСТАН</a></li></h3>
+                </ul>
+            </div>
+        </div>
+        <div class="town1-col">
+            <img src="images/taldykorgan.png" alt="">
+            <div class="layer">
+                <ul>
+                    <h3><li><a href="">ЖЕТЫСУСКАЯ ОБЛАСТЬ</a></li></h3>
+                </ul>
+            </div>
+        </div>
+        <div class="town1-col">
+            <img src="images/ustkamenogorsk.png" alt="">
+            <div class="layer">
+                <ul>
+                    <h3><li><a href="">ВОСТОЧНЫЙ КАЗАХСТАН</a></li></h3>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+
 
 </body>
 </html>
